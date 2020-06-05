@@ -1,0 +1,16 @@
+---
+
+- name: Shutdown
+  hosts: all
+  gather_facts: no
+  tasks:
+
+  - name: shutdown
+    win_command: shutdown /s
+
+  - name: wait
+    delegate_to: "localhost"
+    wait_for:
+      port: "5986"
+      state: "stopped"
+      host: "{{ ansible_host }}"

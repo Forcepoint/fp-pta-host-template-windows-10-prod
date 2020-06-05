@@ -1,0 +1,7 @@
+*.retry
+.idea
+.terraform*
+crash.log
+terraform.tfplan
+terraform.tfstate*
+roles
