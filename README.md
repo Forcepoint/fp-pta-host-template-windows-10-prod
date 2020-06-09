@@ -7,3 +7,5 @@ The only real difference is that there is no inventory.py file. I honestly don't
 except that there was a reason it wouldn't work. ~shrug~ It's been about 2 years since I set 
 this up. Sorry. You need to modify the hosts file so it has the appropriate IP that matches
 what you put in main.tf for Terraform.
+
+For information about PTA and how to use it please visit https://github.com/Forcepoint/fp-pta-overview/blob/master/README.md
