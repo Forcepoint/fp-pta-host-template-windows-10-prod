@@ -6,6 +6,7 @@ pipeline {
     }
     options {
         disableConcurrentBuilds()
+        buildDiscarder logRotator(numToKeepStr: '10')
     }
     parameters {
         booleanParam(name: "Terraform_Init_Local", defaultValue: false, description: 'Perform a terraform init with the already downloaded plugins in /usr/lib/custom-terraform-plugins (i.e. Local) or download them anew from the internet (i.e. External).')
